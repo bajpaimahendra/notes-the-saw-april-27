@@ -27,3 +27,6 @@
 #### Install LAMP ON Ubuntu 18.04
 
 	https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-ubuntu-18-04
+
+	sudo chmod -R 777 /var/www			( Recursive write permission )	
+	sudo a2enmod rewrite				( Load rewrite modile )	
