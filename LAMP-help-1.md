@@ -90,14 +90,14 @@
 			Require all granted
 		</Directory>
 		#AccessFileName .htaccess
-		ErrorLog "logs/test.local-error_log"
-		CustomLog "logs/test.local-access_log" common
+		ErrorLog "/var/www/testlogs/test.local-error_log"
+		CustomLog "/var/www/testlogs/test.local-access_log" common
 	</VirtualHost>
 
 	4-  sudo a2ensite test.local ( to enable site )
 	5-  sudo systemctl restart apache2
 	6-  sudo gedit /etc/hosts 	( save below line for host entry)
-	127.0.0.1	test.local
+		127.0.0.1	test.local
 	
 
 
