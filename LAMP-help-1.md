@@ -105,8 +105,8 @@
 			Require all granted
 		</Directory>
 		#AccessFileName .htaccess
-		ErrorLog "/var/www/testlogs/test.local-error_log"
-		CustomLog "/var/www/testlogs/test.local-access_log" common
+		#ErrorLog "/var/www/testlogs/test.local-error_log"
+		#CustomLog "/var/www/testlogs/test.local-access_log" common
 	</VirtualHost>
 
 	4-  sudo a2ensite test.local ( to enable site )
