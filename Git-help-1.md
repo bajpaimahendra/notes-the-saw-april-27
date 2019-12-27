@@ -32,6 +32,63 @@
 	PS1='\[\033[0;32m\]\[\033[0m\033[0;32m\]\u\[\033[0;36m\] @ \[\033[0;36m\]\h : \w\[\033[0;32m\]$(__git_ps1)\n\[\033[0;32m\]└─\[\033[0m\033[0;32m\]▶ \$ \[\033[0m\]'
 
 
+##### diffmerge settings
+
+		
+	git config --global diff.tool diffmerge
+	git config --global difftool.diffmerge.cmd "/usr/bin/diffmerge \"\$LOCAL\" \"\$REMOTE\""
+	git config --global mergetool.keepBackup false
+	git config --global merge.tool diffmerge
+	git config --global mergetool.diffmerge.trustExitCode true
+	git config --global mergetool.diffmerge.cmd "/usr/bin/diffmerge --merge --result=\"\$MERGED\" \"\$LOCAL\" \"\$BASE\" \"\$REMOTE\""
+
+
+##### Track newly create remote branch
+
+	git fetch --all
+	git branch --track branch-name origin/branch-name
+
+
+##### Change origin
+
+	git remote set-url origin https://mahendravrn@bitbucket.org/visitatvishal82/tawarmall.git
+
+
+##### To go back to a certain state of the project, use the git checkout command and provide the commit identifier.
+
+	git log
+	git checkout 4ea35ab9d43a8d6521bace280ae24477f799f132
+
+	However, you actually don’t need to use the full length of identifier. Usually the first 5 characters are enough:
+
+	git checkout 8d7e4e8
+
+
+##### Git log
+
+	git fetch origin
+	git log origin/feature1  --oneline   ( log of remote branch )
+
+	git config --global alias.lg "log --graph --abbrev-commit --decorate --pretty=format:'%C(red)%h%C(reset) - %C(cyan)%aD%C(reset)%C(green)(%ar)%C(reset)%n%''         %C(yellow)%d%C(reset)%C(white)%s%C(reset) %C(bold blue)<%an>%C(reset)' --all"
+
+##### UnDo the changes
+	how merge individual file from remote
+
+	git fetch origin
+	git checkout origin/develop -- resources/views/booking/billing/pdfinvoice.blade.php ( get code From  develop branch of repo )
+	git checkout resources/views/booking/billing/pdfinvoice.blade.php ( revert changes in locally )
+
+	git checkout 3ef0d...
+
+
+
+
+
+
+
+
+
+
 
 
 
