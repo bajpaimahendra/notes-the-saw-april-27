@@ -27,10 +27,17 @@
 #### Install LAMP ON Ubuntu 18.04
 
 	https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-ubuntu-18-04
+	OR
+	sudo apt-get install lamp-server^	(	^ means using tasksel	https://help.ubuntu.com/community/ApacheMySQLPHP )
 
 	sudo chmod -R 777 /var/www		( Recursive write Permission )	
 	sudo a2enmod rewrite			( Load rewrite modile )
-	sudo /etc/init.d/apache2 restart	( restart apache )	
+	sudo /etc/init.d/apache2 restart	( restart apache )
+
+##### Access mysql from commond line
+	mysql -u root -p
+	Root@123	( enter password and get mysql prompt )
+	mysql> show databases;	
 
 ##### Check Loaded Module of Apache
 
@@ -73,6 +80,14 @@
 	$ sudo a2dismod php7.0
 	$ sudo a2enmod php5.6
 	$ sudo /etc/init.d/apache2 restart
+
+##### Install MongoDB
+
+	1- https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/
+	2- php monngo driver
+		sudo apt-get install php5-mongo
+		sudo gedit /etc/php5/apache2/php.ini
+		and extension=mongo.so in php.ini
 
 
 ##### Virtual Host
