@@ -14,6 +14,23 @@
 	git config --global color.branch auto				   ( Color highlighting )
 	git config core.fileMode false					   ( inside project dir )
 
+##### git use existing folder
+
+	cd <localdir>
+	git init
+	git add .
+	git commit -m 'message'
+	git remote add origin http://tms.bmg.ng:7990/scm/mak/makeifly.git
+	git push -u origin master
+
+##### .gitignore is now working
+
+
+	git rm -r --cached .	( rm all files )
+	git add .		( add all files as per new .gitignore )
+	git commit -m ".gitignore is now working" ( now, commit for new .gitignore to apply)
+
+
 ##### Show Current  Branch In Terminal	
 
 	paste below code at the end of file /home/bajpai/.bashrc

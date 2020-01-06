@@ -18,3 +18,8 @@
 	 
 	8- git checkout develop  ( swithch to branch )
 
+##### Create a branch from another branch
+	
+	git checkout -b myfeature dev
+	git checkout -b transaction_charge master
+
