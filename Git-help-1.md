@@ -1,3 +1,7 @@
+https://guides.github.com/activities/hello-world/
+https://www.youtube.com/watch?v=FyAAIHHClqI
+https://www.youtube.com/watch?v=UuHxzM9r-0M
+
 ##### Install Git
 	
 	sudo apt-get install git	( Install )
@@ -12,16 +16,19 @@
 	git config --global color.ui true				   ( Color highlighting )
 	git config --global color.status auto				   ( Color highlighting )
 	git config --global color.branch auto				   ( Color highlighting )
-	git config core.fileMode false					   ( inside project dir )
+	git config core.fileMode false					   ( inside project dir after clone)
 
 ##### git use existing folder
 
-	cd <localdir>
-	git init
-	git add .
-	git commit -m 'message'
-	git remote add origin http://tms.bmg.ng:7990/scm/mak/makeifly.git
-	git push -u origin master
+	1- cd <localdir>
+	2- git init
+	3- git add .
+	4- git commit -m 'message'
+	5- git remote add origin http://tms.bmg.ng:7990/scm/mak/makeifly.git	( add new origin )
+		OR
+	6- git remote set-url origin https://github.com/anaircontec/makeifly.git ( change origin )
+
+	7- git push -f origin master
 
 ##### .gitignore is now working
 

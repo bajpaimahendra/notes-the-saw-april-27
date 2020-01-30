@@ -1,3 +1,6 @@
+##### Set Serminal Title
+	set-title 'test'
+
 ##### Move the launcher Bottom of the screen again
 
 	gsettings set com.canonical.Unity.Launcher launcher-position Bottom

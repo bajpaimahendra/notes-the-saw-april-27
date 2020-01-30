@@ -21,5 +21,11 @@
 ##### Create a branch from another branch
 	
 	git checkout -b myfeature dev
-	git checkout -b transaction_charge master
+	git checkout -b  feature1 master
+
+
+git clone /github_com/large-repository --depth 1
+git fetch --unshallow
+
+http://makeifly.local/
 
