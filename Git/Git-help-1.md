@@ -32,7 +32,7 @@
 	git config --global alias.lg "log --graph --abbrev-commit --decorate --pretty=format:'%C(red)%h%C(reset) - %C(cyan)%aD%C(reset)%C(green)(%ar)%C(reset)%n%''         %C(yellow)%d%C(reset)%C(white)%s%C(reset) %C(bold blue)<%an>%C(reset)' --all"
 
 ##### UnDo the changes
-	how merge individual file from remote
+	how merge individual file from remote(github)
 
 	git fetch origin
 	git checkout origin/develop -- resources/views/booking/billing/pdfinvoice.blade.php ( get code From  develop branch of repo )
